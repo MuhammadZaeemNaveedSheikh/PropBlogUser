@@ -28,7 +28,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-secondary border-b border-gray-darker py-3 px-5">
+    <nav className="bg-secondary border-b border-gray-darker py-3 px-5 sticky top-0">
       <div className="flex justify-between items-center  max-w-[1300px] mx-auto">
         <Menu />
         <MobileMenu open={open} setOpen={setOpen} />

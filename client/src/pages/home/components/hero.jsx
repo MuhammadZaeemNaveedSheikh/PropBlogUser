@@ -1,4 +1,4 @@
-import monkey from "../../assets/images/logo.png";
+import monkey from "../../../assets/images/logo.png";
 
 const Hero = () => {
   return (

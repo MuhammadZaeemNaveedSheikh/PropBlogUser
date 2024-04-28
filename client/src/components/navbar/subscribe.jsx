@@ -16,7 +16,7 @@ const Subscribe = () => {
           isOpen
             ? "visible opacity-100 pointer-events-auto"
             : "invisible opacity-0 pointer-events-none"
-        }  transition-all absolute inset-0 flex items-center justify-center`}
+        }  transition-all fixed inset-0 flex items-center justify-center`}
       >
         <div className="bg-black bg-opacity-85 z-50 w-full h-full absolute" onClick={()=>setIsOpen(false)}></div>
         <div className="bg-secondary relative z-50 rounded-xl shadow-xl">
