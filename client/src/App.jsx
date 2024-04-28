@@ -5,10 +5,12 @@ import Navbar from './components/navbar/main'
 function App() {
 
   return (
-    <main>
+    <>
       <Navbar />
-      <Outlet />
-    </main>
+      <main className='max-w-[1300px] mx-auto px-5'>
+        <Outlet />
+      </main>
+    </>
   )
 }
 

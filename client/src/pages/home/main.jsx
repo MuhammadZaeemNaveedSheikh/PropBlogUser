@@ -1,7 +1,9 @@
+import Hero from "./hero"
+
 const Home = () => {
   return (
-    <div>
-      Home
+    <div className="py-14">
+      <Hero />
     </div>
   )
 }

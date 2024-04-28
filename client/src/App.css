@@ -1,10 +1,12 @@
 :root {
     --white: #F3F3F7;
+    --black: #0F0F0F;
 }
 
 body {
     color: var(--white);
     font-family: "Inter", sans-serif;
+    background-color: var(--black);
 }
 
 .material-symbols-rounded {
@@ -13,4 +15,16 @@ body {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+.font-kanit {
+  font-family: 'Kanit', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }
