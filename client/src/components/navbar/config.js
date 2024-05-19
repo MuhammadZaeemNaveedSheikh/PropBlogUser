@@ -1,7 +1,7 @@
 const nav_links = [
     {
         title: "News",
-        path: "/news",
+        path: "/news1",
     },
     {
         title: "Forum",

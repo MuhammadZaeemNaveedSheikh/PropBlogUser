@@ -39,7 +39,7 @@ const News = () => {
         estimated_time: "5 min read",
       },
     ];
-  }, [filter]);
+  }, []);
 
   return (
     <section className="space-y-6">

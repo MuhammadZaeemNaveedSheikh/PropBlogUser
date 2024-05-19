@@ -2,26 +2,28 @@ import PropTypes from "prop-types";
 
 import formatDate from "../../utils/formate_date";
 import getCategoryLogo from "../../utils/getCategoryLogo";
-
 const BlogCard = ({
   title,
   description,
+  company,
+  companylogo,
   category,
   date,
   image,
   estimated_time,
 }) => {
   return (
-    <div className="md:max-w-[720px] hover:bg-white hover:bg-opacity-5 p-5 rounded-2xl cursor-pointer flex items-start gap-8 lg:flex-nowrap flex-wrap">
+    <div className="md:max-w-xs hover:bg-white hover:bg-opacity-5 mx-auto rounded-2xl cursor-pointer gap-4 lg:flex-nowrap flex-wrap">
       <div className="w-full md:max-w-[308px] h-[182px]">
         <img
-          src={"http://via.placeholder.com/600x400"}
+          src={image}
           alt="title"
           className="w-full h-full object-cover rounded-xl"
         />
+
       </div>
       <div className="max-w-[338px]">
-        <p className="text-[15px] text-gray-dark flex items-center">
+        <p className="text-[15px] text-gray-dark flex items-center mt-2">
           <span>{formatDate(date)}</span>
           <span className="mx-2 text-[10px] text-gray-darker">•</span>
           <span className="capitalize flex items-center gap-1">
@@ -31,12 +33,23 @@ const BlogCard = ({
           <span className="mx-2 text-[10px] text-gray-darker">•</span>
           <span>{estimated_time}</span>
         </p>
-        <h2 className="text-2xl md:text-lg font-semibold max-w-[582px] my-2 line-clamp-2">
+        <h2 className="mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
           {title}
         </h2>
-        <p className="text-gray-dark mt-1 max-w-[582px] line-clamp-2">
+        <p className="text-gray-dark mt-1 mb-1 max-w-[582px] line-clamp-2">
           {description}
         </p>
+        <div className="grid-cols-2 flex flex-wrap gap-x-1">
+          <img
+            src={companylogo}
+            alt="title"
+            className="w-6 h-6 rounded-xl"
+          />
+
+          <p className="text-gray-dark mt-1 max-w-[582px] line-clamp-2 text-sm">
+            {company}
+          </p>
+        </div>
       </div>
     </div>
   );
